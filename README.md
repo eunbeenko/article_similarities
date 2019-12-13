@@ -1,1 +1,3 @@
-# article_similarities
+Get New York Times Article API: "https://developer.nytimes.com/"
+
+This project is about querying New York Times article body using API. This API is an “Article Search API” that searches for New York Times article by keyword. The dataset is being stored into persistent storage on my machine, where I used SQLite. The program then allow user to input the keyword that will search for the body of the article contains the keyword. After the article body is being matched with the keyword, then the program computes the text similarities between the relevant articles and display the similarities. This is being computed through PySpark. Since the result articles are too many to compute similarity, I chose the first 5 articles to compute. The similarities are displayed as the frequency of the words appears on both of the articles that has been compared.
